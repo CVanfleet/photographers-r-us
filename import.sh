@@ -7,6 +7,7 @@ echo $ID
 rm server.js
 rm import.sh
 rm README.md
+rm .env
 rm package.json
 
 wget -qO- \
