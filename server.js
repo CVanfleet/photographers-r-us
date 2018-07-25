@@ -34,12 +34,13 @@ function thimbleImport(token, id) {
       ID: id
     }
   }, function (error, stdout, stderr) {
-        console.log('stdout: ' + stdout);
-        console.log('stderr: ' + stderr);
-        if (error !== null) {
-             console.log('exec error: ' + error);
-        }
-    });
+    console.log(stdout);
+    console.error(stderr);
+    if (error !== null) {
+      console.log('exec error: ' + error);
+    }
+    process.exit()
+  });
 }
 
 // Check if we're a remix
