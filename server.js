@@ -23,26 +23,30 @@ var listener = app.listen(process.env.PORT, function () {
 
 var exec = require('child_process').exec, child;
 
-function thimbleImport(thimbleURL) {
+function thimbleImport(token, id) {
   // Remove existing files
   // Fetch archive
   // Extract
   // Restart as Thimble App
-  child = exec('./import.sh',
-  function (error, stdout, stderr) {
-      console.log('stdout: ' + stdout);
-      console.log('stderr: ' + stderr);
-      if (error !== null) {
-           console.log('exec error: ' + error);
-      }
-  });
+  child = exec('./import.sh', {
+    env: {
+      TOKEN: token,
+      ID: id
+    }
+  }, function (error, stdout, stderr) {
+        console.log('stdout: ' + stdout);
+        console.log('stderr: ' + stderr);
+        if (error !== null) {
+             console.log('exec error: ' + error);
+        }
+    });
 }
 
 // Check if we're a remix
 if('ea4b9a75-92ac-4057-9a6e-31dde0d03682' !== process.env.PROJECT_ID) {
   console.log('remix!')
-  thimbleImport()
+  thimbleImport(process.env.TOKEN, process.env.ID)
 } else {
   console.log('Base!')
-  thimbleImport()
+  thimbleImport(process.env.TOKEN, process.env.ID)
 }
