@@ -1,19 +1,8 @@
-// server.js
-// where your node app starts
-
-// init project
 var express = require('express');
 var app = express();
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
-
-// http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  response.sendFile(__dirname + '/README.md');
 });
 
 // listen for requests :)
@@ -45,8 +34,10 @@ function thimbleImport(token, id) {
 
 // Check if we're a remix
 if('ea4b9a75-92ac-4057-9a6e-31dde0d03682' !== process.env.PROJECT_ID) {
-  console.log('remix!')
-  thimbleImport(process.env.TOKEN, process.env.ID)
-} else {
-  console.log('Base!')
+  if(process.env.TOKEN && process.env.ID) {
+    console.log('Starting Thimble import')
+    thimbleImport(process.env.TOKEN, process.env.ID)
+  } else {
+    console.error("Cannot import from Thimble, are you sure you passed TOKEN and ID variables to the remix?")
+  }
 }
