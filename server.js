@@ -48,5 +48,4 @@ if('ea4b9a75-92ac-4057-9a6e-31dde0d03682' !== process.env.PROJECT_ID) {
   thimbleImport(process.env.TOKEN, process.env.ID)
 } else {
   console.log('Base!')
-  thimbleImport(process.env.TOKEN, process.env.ID)
 }
