@@ -21,12 +21,14 @@ var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
 
+var exec = require('child_process').exec, child;
+
 function thimbleImport(thimbleURL) {
   // Remove existing files
   // Fetch archive
   // Extract
   // Restart as Thimble App
-  child = exec('ls',
+  child = exec('./import.sh',
   function (error, stdout, stderr) {
       console.log('stdout: ' + stdout);
       console.log('stderr: ' + stderr);
@@ -36,6 +38,11 @@ function thimbleImport(thimbleURL) {
   });
 }
 
-var exec = require('child_process').exec, child;
-
-
+// Check if we're a remix
+if('ea4b9a75-92ac-4057-9a6e-31dde0d03682' !== process.env.PROJECT_ID) {
+  console.log('remix!')
+  thimbleImport()
+} else {
+  console.log('Base!')
+  thimbleImport()
+}
