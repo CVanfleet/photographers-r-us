@@ -26,4 +26,16 @@ function thimbleImport(thimbleURL) {
   // Fetch archive
   // Extract
   // Restart as Thimble App
+  child = exec('ls',
+  function (error, stdout, stderr) {
+      console.log('stdout: ' + stdout);
+      console.log('stderr: ' + stderr);
+      if (error !== null) {
+           console.log('exec error: ' + error);
+      }
+  });
 }
+
+var exec = require('child_process').exec, child;
+
+
