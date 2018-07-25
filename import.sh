@@ -14,5 +14,5 @@ wget -qO- \
   "https://thimble.mozilla.org/en-US/projects/${ID}/files/data" \
   | tar -xv
 
-rm .wget-hsts
-#refresh
+rm -f .wget-hsts
+refresh
