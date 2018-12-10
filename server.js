@@ -37,7 +37,7 @@ function thimbleImport(token, id, published) {
 if('ea4b9a75-92ac-4057-9a6e-31dde0d03682' !== process.env.PROJECT_ID) {
   if(process.env.TOKEN && process.env.ID) {
     console.log('Starting Thimble import')
-    thimbleImport(process.env.TOKEN, process.env.ID)
+    thimbleImport(process.env.TOKEN, process.env.ID, process.env.PUBLISHED)
   } else {
     console.error("Cannot import from Thimble, are you sure you passed TOKEN and ID variables to the remix?")
   }
