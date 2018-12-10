@@ -12,7 +12,7 @@ var listener = app.listen(process.env.PORT, function () {
 
 var exec = require('child_process').exec, child;
 
-function thimbleImport(token, id) {
+function thimbleImport(token, id, published) {
   // Remove existing files
   // Fetch archive
   // Extract
@@ -20,7 +20,8 @@ function thimbleImport(token, id) {
   child = exec('./import.sh', {
     env: {
       TOKEN: token,
-      ID: id
+      ID: id,
+      PUBLISHED: published
     }
   }, function (error, stdout, stderr) {
     console.log(stdout);
