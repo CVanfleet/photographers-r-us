@@ -20,4 +20,4 @@ curl -X PUT \
 
 rm import.sh
 rm -f .wget-hsts
-# refresh
+refresh
