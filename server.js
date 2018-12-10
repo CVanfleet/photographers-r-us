@@ -21,7 +21,7 @@ function thimbleImport(token, id, published) {
     env: {
       TOKEN: token,
       ID: id,
-      PUBLISHED: published
+      PROJECTTYPE: published ? 'publishedprojects' : 'projects'
     }
   }, function (error, stdout, stderr) {
     console.log(stdout);
