@@ -11,8 +11,8 @@ rm .env
 rm package.json
 
 wget -qO- \
-  --header "Authorization: bearer ${TOKEN}" \
-  "https://thimble.mozilla.org/en-US/projects/${ID}/files/data" \
+  --header "Authorization: export ${TOKEN}" \
+  "https://bramble.mofostaging.net/en-US/projects/${ID}/export/data" \
   | tar -xv
 
 rm -f .wget-hsts
