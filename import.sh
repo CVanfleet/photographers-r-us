@@ -1,11 +1,10 @@
 #!/bin/bash
 
 ls
-echo $TOKEN
-echo $ID
+echo "TOKEN: $TOKEN"
+echo "ID: $ID"
 
 rm server.js
-rm import.sh
 rm README.md
 rm .env
 rm package.json
@@ -19,5 +18,6 @@ curl -X PUT \
   -H "Authorization: export ${TOKEN}" \
   "https://bramble.mofostaging.net/en-US/projects/${ID}/export/finish"
 
+rm import.sh
 rm -f .wget-hsts
-refresh
+# refresh
