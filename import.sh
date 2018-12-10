@@ -14,8 +14,9 @@ wget -qO- \
   "https://bramble.mofostaging.net/en-US/projects/${ID}/export/data" \
   | tar -xv
   
-curl -X PUT \
-  -H "Authorization: export ${TOKEN}" \
+wget -O/dev/null -q \
+  --method "PUT" \
+  --header "Authorization: export ${TOKEN}" \
   "https://bramble.mofostaging.net/en-US/projects/${ID}/export/finish"
 
 rm import.sh
