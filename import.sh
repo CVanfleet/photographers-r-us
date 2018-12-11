@@ -6,10 +6,9 @@ echo "ID: $ID"
 echo "TYPE: $PROJECTTYPE"
 
 rm server.js
-rm README.md
+mv README-sample.md README.md
 rm .env
 rm package.json
-
 
 wget -qO- \
   --header "Authorization: export ${TOKEN}" \
