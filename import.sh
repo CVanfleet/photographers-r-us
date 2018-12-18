@@ -12,13 +12,13 @@ rm package.json
 
 wget -qO- \
   --header "Authorization: export ${TOKEN}" \
-  "https://bramble.mofostaging.net/en-US/${PROJECTTYPE}/${ID}/export/data" \
+  "https://thimble.mozilla.org/en-US/${PROJECTTYPE}/${ID}/export/data" \
   | tar -xv
   
 wget -O/dev/null -q \
   --method "PUT" \
   --header "Authorization: export ${TOKEN}" \
-  "https://bramble.mofostaging.net/en-US/${PROJECTTYPE}/${ID}/export/finish"
+  "https://thimble.mozilla.org/en-US/${PROJECTTYPE}/${ID}/export/finish"
 
 rm import.sh
 rm -f .wget-hsts
