@@ -1,11 +1,10 @@
-Glitch Thimble Importer
-=======================
+Welcome To Glitch!
+==================
 
-Please wait while we import your app...
+Edit this file to tell people about your project.
 
-More Info
----------
+To view your project click the "Show Live" button in the upper left of the screen.
 
-Remix this app with your Thimble project id and token and it will import that app and run it!
+We hope you enjoy our friendly and welcoming community. If you have any problems or questions feel free to reach out to us through our [support forum](https://support.glitch.com/).
 
-    https://glitch.com/edit/#!/remix/thimble-import?TOKEN=$token&ID=$projectId
+Thank you, and have a great day!
