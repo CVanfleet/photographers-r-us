@@ -1,10 +1,10 @@
-Welcome To Glitch!
+Person Site Project
 ==================
 
-Edit this file to tell people about your project.
+Use this as a starting point for your Personal site.
 
-To view your project click the "Show Live" button in the upper left of the screen.
+Use the site-plan.html to complete the planning for the site.
 
-We hope you enjoy our friendly and welcoming community. If you have any problems or questions feel free to reach out to us through our [support forum](https://support.glitch.com/).
+When you are ready to start building your site start with index.html.  Feel free to replace or change anything in that file.  It will become the homepage for your site.
 
-Thank you, and have a great day!
+
