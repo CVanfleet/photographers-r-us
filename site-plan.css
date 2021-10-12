@@ -15,7 +15,7 @@ Fonts are separated by a | */
   --primary-color: #d9d9d9;
   --secondary-color: #545454;
   --accent1-color: #D9C5B2;
-  --accent2-color: #0E1428;
+  --accent2-color: #396E94;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Barlow Semi Condensed', sans-serif; 
@@ -27,9 +27,9 @@ Fonts are separated by a | */
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: black;
-  --nav-link-color: #396E94;
-  --nav-background-color: #E7C24F;
-  --nav-hover-link-color: #E7C24F;
+  --nav-link-color: #0E1428;
+  --nav-background-color: #D9C5B2;
+  --nav-hover-link-color: #D9C5B2;
   --nav-hover-background-color: #396E94;
 }
 
