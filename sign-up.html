@@ -30,7 +30,7 @@
               <form action="find.html" method="post" id="sign-up-form">
                   <div>
                       <label for="fullname">Full Name:</label>
-                      <input class="input-item" type="text" id="full-name" name="full-name" maxlength="30">
+                      <input class="input-item" type="text" id="full-name" name="full_name" maxlength="30">
                   </div>
                   <div>
                       <label for="email">Email:</label>
@@ -38,7 +38,7 @@
                   </div>
                   <div>
                       <label for="zip">Zip Code:</label>
-                      <input class="input-item" type="numbers" maxlength="5" id="zip-code" name="zip-code">
+                      <input class="input-item" type="numbers" maxlength="5" id="zip-code" name="zip_code">
                   </div>
                   <div>
                       <label for="bio">Bio:</label>
@@ -47,18 +47,35 @@
                   </div>
                   <div>
                       <label for="profile-pic">Profile Picture:</label>
-                      <input class="input-item" type="file" name="profile-picture" value="fileupload" id="profile-pic">
+                      <input class="input-item" type="file" name="profile_picture" value="fileupload" id="profile-pic">
                                             
                   </div>
                   <div>
                       <label for="sample-pictures">Sample Picture (Pick 3):</label>
-                      <input class="input-item" type="file" name="sample-pic1" value="fileupload" id="sample-pic1">
-                      <input class="input-item" type="file" name="sample-pic2" value="fileupload" id="sample-pic2">
-                      <input class="input-item" type="file" name="sample-pic3" value="fileupload" id="sample-pic3">
+                      <input class="input-item" type="file" name="sample-pic1" value="fileupload" id="sample_pic1">
+                      <input class="input-item" type="file" name="sample-pic2" value="fileupload" id="sample_pic2">
+                      <input class="input-item" type="file" name="sample-pic3" value="fileupload" id="sample_pic3">
                   </div>
                   <div>
                     <button type="submit">Finish</button>
                 </div>
+                <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.full_name.value +'! Thank you for your message. We will review your profile and get back to you!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
             </form>
             <img class="sign-up-image-left" src="https://cdn.glitch.me/7d7ed5bd-a348-480c-b807-fd91f5f3f2cc%2Fnordwood-themes-mtyWZiqdnM4-unsplash.jpg?v=1634004729849" alt="Sing-Up Picture right">
           </div>
