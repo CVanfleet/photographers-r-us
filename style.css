@@ -15,3 +15,7 @@ h1 {
   font-family: "Merriweather", serif;
   font-size: 32px;
 }
+
+img {
+  max-width: 20%
+}
