@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <style>
-      img { max-width: 100%; overflow: hidden; margin: 3px}
+      img { max-width: 100%; 
+            overflow: hidden;
+            margin: 0 0 0 0}
       .card { width: 320px;
               box-shadow: 1px 1px 4px 1px #ccc;
               border-radius: 3px 0 0 3px;
               background-color: white;
+              overflow: hidden;
             }
-      p { font-family: sans-serif;}
+      p { font-family: sans-serif;
+          margin: 10px 10px 10px 10px}
+      button {padding: 10px;}
+      .viewButton {margin: 10px 0 10px 20px}
+      .editButton {margin: 10px 0 10px 0}
+      
     </style>
   </head>
   
@@ -21,8 +29,8 @@
     <img src='https://picsum.photos/320/240' alt='card_img'>
     <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <footer>
-      <button class='viewButton'>  </button>
-      <button class='editButton'>  </button>
+      <button class='viewButton'>View</button>
+      <button class='editButton'>Edit</button>
     </footer>
   </article>
 </body>
