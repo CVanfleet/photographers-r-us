@@ -38,6 +38,15 @@ p {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: #396E94;
+}
+a:hover {
+  color: #545454;
+  text-decoration: underline;
+}
+
 img {
   max-width: 20%
 }
@@ -144,3 +153,11 @@ header {
   grid-template-columns: 500px auto;
   align-items: center; 
 }
+
+nav, ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  text-align: center;
+  margin: 0;
+}
+
