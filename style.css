@@ -192,9 +192,24 @@ nav, ul {
 
 .find-section {
   padding: 0 10px 10px 20px;
+  border-right: 1px solid darkblue;
   
 }
 
 .sign-up-section {
   padding: 0 20px 10px 10px;
+  border-right: 1px solid darkblue;
+}
+
+.header-for-find, .header-for-sign-up, .paragraph-for-find, .paragraph-for-sign-up {
+  text-align: center;
+}
+
+button {
+  padding: 6px;
+  font-family: 'Overlock', cursive;
+  color: white;
+  font-size: 15px;
+  background-color: darkblue;
+  border-radius: 7px;
 }
