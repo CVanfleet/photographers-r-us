@@ -180,6 +180,7 @@ nav, ul {
   display: grid;
   grid-template-columns: 1fr 1fr
   
+  
 }
 
 .intro {
@@ -188,6 +189,7 @@ nav, ul {
   border: 3px solid darkblue;
   padding: 5px;
   background-color: darkblue;
+  
 }
 
 .find-section {
@@ -206,10 +208,18 @@ nav, ul {
 }
 
 button {
-  padding: 6px;
+  width: 200px;
+  height: 30px;
   font-family: 'Overlock', cursive;
   color: white;
   font-size: 15px;
-  background-color: darkblue;
+  color: darkblue;
   border-radius: 7px;
+  
+  
+}
+
+button:hover {
+  background-color: darkblue;
+  color: white;
 }
