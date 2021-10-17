@@ -16,7 +16,10 @@
 */
 
 .logo {
-  width: 50%;
+  width: 100%;
+}
+img {
+  width: 100%;
 }
 
 body {
@@ -49,7 +52,7 @@ a:hover {
 
 
 #content {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1em;
 }
@@ -158,3 +161,7 @@ nav, ul {
   margin: 0;
 }
 
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
