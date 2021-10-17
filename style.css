@@ -16,7 +16,7 @@
 */
 
 .logo {
-  max-width: auto;
+  width: 50%;
 }
 
 body {
@@ -46,9 +46,7 @@ a:hover {
   color: #545454;
   text-decoration: underline;
 }
-img {
-  width: 20%;
-}
+
 
 #content {
   max-width: 960px;
