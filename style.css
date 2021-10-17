@@ -1,25 +1,35 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+/* Barlow Semi Condensed    font-family: 'Barlow Semi Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+/*Josefin Slab   font-family: 'Josefin Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=Josefin+Slab:wght@100&display=swap');
+/*overlock     font-family: 'Overlock', cursive; */
+@import url('https://fonts.googleapis.com/css2? family=Advent+Pro:wght@100&family=Barlow+Semi+Condensed:wght@100&family=Josefin+Slab:wght@100&family=Overlock&display=swap');
+
 
 /*   --primary-color: #d9d9d9;
   --secondary-color: #545454;
   --accent1-color: #D9C5B2;
   --accent2-color: #396E94; 
+
+  --heading-font: 'Barlow Semi Condensed', sans-serif; 
+  --paragraph-font: 'Overlock', cursive;
 */
 
 body {
-  background-color: #d9d9d9;
-  font-family: "Open Sans", sans-serif;
+  background-color: #545454;
   padding: 5px 25px;
   font-size: 18px;
   margin: 0;
   color: #444;
 }
 
-h1 {
-  font-family: "Merriweather", serif;
+h1, h2, h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 32px;
+}
+
+p {
+  font-family: 'Overlock', cursive;
 }
 
 img {
@@ -32,16 +42,20 @@ img {
   padding: 1em;
 }
 
+main {
+  background-color: #d9d9d9;
+}
 
-  #feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
 
 }
 .moveDown {
@@ -113,4 +127,9 @@ button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
   margin-left: .5em;
+}
+
+
+header {
+  display: grid;
 }
