@@ -16,7 +16,7 @@
 */
 
 .logo {
-  width: 100%;
+  max-width: auto;
 }
 
 body {
@@ -46,9 +46,8 @@ a:hover {
   color: #545454;
   text-decoration: underline;
 }
-
 img {
-  max-width: 20%
+  width: 20%;
 }
 
 #content {
@@ -150,7 +149,7 @@ button {
 header {
   display: grid;
   background-color: #d9d9d9;
-  grid-template-columns: 500px auto;
+  grid-template-columns: 300px auto;
   align-items: center; 
 }
 
