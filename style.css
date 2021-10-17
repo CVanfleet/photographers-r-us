@@ -18,7 +18,7 @@
 .logo {
   width: 100%;
 }
-img {
+main img {
   width: 100%;
 }
 
@@ -164,4 +164,16 @@ nav, ul {
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  items-align: center;
+}
+
+.photographers, .r, .us {
+  text-align: center;
+  
+}
+
+/*home grid */
+
+.home-grid {
+  
 }
