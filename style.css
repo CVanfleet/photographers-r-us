@@ -122,6 +122,15 @@ textarea {
   border: 1px solid #999;
 }
 
+#sample_pic2 {
+  margin-left: 94px;
+  margin-top: 5px;
+}
+
+#sample_pic3 {
+  
+}
+
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
@@ -292,3 +301,6 @@ footer{
   grid-column: 3/4;
   margin: 5px 0 0 0;
 }
+
+/*Sign-up subpage */
+
