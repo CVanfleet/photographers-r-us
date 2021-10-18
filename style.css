@@ -3,7 +3,7 @@
 /*Josefin Slab   font-family: 'Josefin Slab', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=Josefin+Slab:wght@100&display=swap');
 /*overlock     font-family: 'Overlock', cursive; */
-@import url('https://fonts.googleapis.com/css2? family=Advent+Pro:wght@100&family=Barlow+Semi+Condensed:wght@100&family=Josefin+Slab:wght@100&family=Overlock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
 
 
 /*   --primary-color: #d9d9d9;
@@ -15,6 +15,8 @@
   --paragraph-font: 'Overlock', cursive;
 */
 
+.logo {
+  width: 100%;
 }
 main img {
   width: 100%;
@@ -157,12 +159,8 @@ button {
 header {
   display: grid;
   background-color: #d9d9d9;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center; 
-}
-
-.logo {
-  width: 50%;
 }
 
 nav, ul {
@@ -201,8 +199,8 @@ nav, ul {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr
-  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  
   margin: 10px 5px 10px 5px;
   
   
@@ -236,7 +234,7 @@ nav, ul {
   text-align: center;
 }
 
-button {
+.find-button, .sign-up-button {
   width: 200px;
   height: 30px;
   font-family: 'Overlock', cursive;
@@ -249,7 +247,7 @@ button {
   
 }
 
-button:hover {
+button:hover .find.butto {
   background-color: #1D3461;
   color: white;
 }
