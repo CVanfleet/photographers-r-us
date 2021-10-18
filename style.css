@@ -55,6 +55,7 @@ a:hover {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1em;
+  
 }
 
 main {
@@ -151,7 +152,7 @@ button {
 header {
   display: grid;
   background-color: #d9d9d9;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 250px auto;
   align-items: center; 
 }
 
@@ -174,7 +175,11 @@ nav, ul {
   
 }
 
-.ban-pic-1, 
+.ban-pic-1, .ban-pic-2, .ban-pic-3 {
+  border-top:4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
+  width: 100%
+}
 
 
 
@@ -183,7 +188,7 @@ nav, ul {
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr
-  
+  width: 100%;
   
 }
 
@@ -220,7 +225,7 @@ button {
   font-family: 'Overlock', cursive;
   color: white;
   font-size: 15px;
-  color: darkblue;
+  color: #1D3461;
   border-radius: 7px;
   margin: 10px auto;
   
@@ -228,7 +233,7 @@ button {
 }
 
 button:hover {
-  background-color: darkblue;
+  background-color: #1D3461;
   color: white;
 }
 
