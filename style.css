@@ -159,12 +159,15 @@ button {
 header {
   display: grid;
   background-color: #d9d9d9;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center; 
 }
 
+.logo {
+  width: 128px;
+}
+
 nav, ul { 
-  grid-column: 2/4;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
   text-align: center;
@@ -262,7 +265,10 @@ footer{
   align-items: center; 
 }
 
-
+.copy-right {
+  grid-column: 1/3;
+  color: #183059;
+}
 
 .social {
   grid-column: 3/4;
