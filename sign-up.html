@@ -30,9 +30,9 @@
               <img class="sign-up-image-left" src="https://cdn.glitch.me/7d7ed5bd-a348-480c-b807-fd91f5f3f2cc%2F7d7ed5bd-a348-480c-b807-fd91f5f3f2cc_yoann-siloine-_T4w3JDm6ug-unsplash.jpg?v=1634509846830" alt="Sing-Up Picture left">
             
               <div id="feedback"></div>
-              <form style='z-index: 2';action="find.html" method="post" id="sign-up-form">
+              <form style='z-index: 2;' action="find.html" method="post" id="sign-up-form">
                   <div>
-                      <label for="fullname">Full Name:</label>
+                      <label for="full-name">Full Name:</label>
                       <input class="input-item" type="text" id="full-name" name="full_name" maxlength="30">
                   </div>
                   <div>
@@ -40,24 +40,24 @@
                       <input class="input-item" type="text" id="email" name="email">
                   </div>
                   <div>
-                      <label for="zip">Zip Code:</label>
-                      <input class="input-item" type="numbers" maxlength="5" id="zip-code" name="zip_code">
+                      <label for="zip-code">Zip Code:</label>
+                      <input class="input-item" type="text" maxlength="5" id="zip-code" name="zip_code">
                   </div>
                   <div>
                       <label for="bio">Bio:</label>
-                      <textarea id="msg" name="user_message"></textarea>
+                      <textarea id="msg" name="user_message" id="bio"></textarea>
                       
                   </div>
                   <div>
                       <label for="profile-pic">Profile Picture:</label>
-                      <input class="input-item" type="file" name="profile_picture" value="fileupload" id="profile-pic">
+                      <input class="input-item" type="image" name="profile_picture" alt="fileupload" id="profile-pic">
                                             
                   </div>
                   <div>
                       <label for="sample-pictures">Sample Picture (Pick 3):</label>
-                      <input class="input-item" type="file" name="sample-pic1" value="fileupload" id="sample_pic1">
-                      <input class="input-item" type="file" name="sample-pic2" value="fileupload" id="sample_pic2">
-                      <input class="input-item" type="file" name="sample-pic3" value="fileupload" id="sample_pic3">
+                      <input class="input-item" type="image" name="sample-pic1" alt="fileupload" id="">
+                      <input class="input-item" type="image" name="sample-pic2" alt="fileupload" id="sample_pic2">
+                      <input class="input-item" type="image" name="sample-pic3" alt="fileupload" id="sample_pic3">
                   </div>
                   <div class='submit-sign-up-button'>
                     <button class='submit-sign-up' type="submit">Sign-Up</button>
@@ -83,6 +83,7 @@
             <img style='z-index: 1;' class="sign-up-image-right" src="https://cdn.glitch.me/7d7ed5bd-a348-480c-b807-fd91f5f3f2cc%2F7d7ed5bd-a348-480c-b807-fd91f5f3f2cc_nordwood-themes-mtyWZiqdnM4-unsplash.jpg?v=1634509788546" alt="Sing-Up Picture right">
           </div>
       </main>
+    </div>
       <footer>
         <p class = "copy-right">&copy; 2021 Photographers R Us Co. - Clayton Vanfleet - WDD 130.31</p>
         <div class="social">
@@ -90,7 +91,7 @@
           <a class= "face" href="https://www.facebook.com/" target="_blank"><img src="https://cdn.glitch.com/3e3fddd4-7577-47f4-9660-8af0b21176f7%2Ffacebook.png?v=1632620776826" alt="Facebook icon"></a>
           <a class="insta" href="https://www.instagram.com/" target="_blank"><img src="https://cdn.glitch.com/3e3fddd4-7577-47f4-9660-8af0b21176f7%2Finstagram.png?v=1632620780114" alt="Instagram icon"></a>
           <a class="youtube" href="https://www.youtube.com/" target="_blank"><img src="https://cdn.glitch.com/3e3fddd4-7577-47f4-9660-8af0b21176f7%2Fyoutube.png?v=1632620782546" alt="Youtube icon"></a>
+        </div>
       </footer>
-    </div>
   </body>
 </html>
