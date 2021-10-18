@@ -226,9 +226,6 @@ nav, ul {
   text-align: center;
   width: 100%;
   
-  .sign-up-instructions {
-    grid-column: 2/4;
-  }
 
   
 }
@@ -366,8 +363,7 @@ footer{
   align-self: center;
 }
 
-.sign-up-instructions {
+.instructions {
   grid-column: 2/4;
   text-align: center; 
-  
 }
