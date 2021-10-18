@@ -157,8 +157,12 @@ button {
 header {
   display: grid;
   background-color: #d9d9d9;
-  grid-template-columns: 110px auto;
+  grid-template-columns: 1fr 1fr;
   align-items: center; 
+}
+
+.logo {
+  width: 50%;
 }
 
 nav, ul {
@@ -180,6 +184,8 @@ nav, ul {
 .photographers, .r, .us {
   text-align: center;
   width: 100%;
+  
+
   
 }
 
