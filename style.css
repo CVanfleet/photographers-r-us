@@ -163,7 +163,8 @@ header {
   align-items: center; 
 }
 
-nav, ul {
+nav, ul { 
+  grid-column: 2/4;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
   text-align: center;
@@ -247,7 +248,7 @@ nav, ul {
   
 }
 
-button:hover .find.butto {
+.find-button:hover, .sign-up-button:hover{
   background-color: #1D3461;
   color: white;
 }
@@ -256,5 +257,13 @@ button:hover .find.butto {
 
 footer{
   display: grid;
-  
+  background-color: #d9d9d9;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center; 
+}
+
+
+
+.social {
+  grid-column: 3/4;
 }
