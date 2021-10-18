@@ -165,11 +165,13 @@ nav, ul {
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  items-align: center;
+  background-color: blue;
+  
 }
 
 .photographers, .r, .us {
   text-align: center;
+  
 }
 
 
@@ -186,9 +188,9 @@ nav, ul {
 .intro {
   grid-column: 1/3;
   text-align: center;
-  border: 3px solid blue;
+  border-bottom: 2px solid darkblue;
   padding: 5px;
-  background-color: blue;
+  margin: 0;
   
 }
 
@@ -201,7 +203,7 @@ nav, ul {
 
 .sign-up-section {
   padding: 0 20px 10px 10px;
-  border-right: 1px solid darkblue;
+  border-left: 1px solid darkblue;
   display: grid;
 }
 
@@ -225,4 +227,11 @@ button {
 button:hover {
   background-color: darkblue;
   color: white;
+}
+
+/*footer*/
+
+footer{
+  display: grid;
+  
 }
