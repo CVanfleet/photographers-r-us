@@ -85,13 +85,13 @@ main {
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 500px;
+  width: 100%;
   /* Form outline */
   padding: 1em;
   border: 1px solid #CCC;
-  border-radius: 1em;
+  border-radius: 0;
   background-color: #d9d9d9;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -146,6 +146,18 @@ input {
   width: 100px;
   height: auto;
   font-family: 'Overlock', cursive;
+  font-size: 20px;
+  color: #1D3461;
+}
+
+.submit-sign-up:hover {
+  background-color: #1D3461;
+  color: white;
+}
+
+.submit-sign-up-button {
+  text-align: center;
+  margin-top: 10px;
 }
 
 input:focus,
@@ -214,6 +226,9 @@ nav, ul {
   text-align: center;
   width: 100%;
   
+  .sign-up-instructions {
+    grid-column: 2/4;
+  }
 
   
 }
@@ -321,3 +336,21 @@ footer{
 
 /*Sign-up subpage */
 
+.home-grid-sign-up {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sign-up-image-left {
+  grid-column: 1/2;
+  margin-bottom: 10px;
+}
+
+#feedback {
+  grid-column: 2/3;
+}
+
+.sign-up-image-right {
+  grid-column: 3/4;
+  margin-bottom: 10px;
+}
