@@ -218,7 +218,7 @@ nav, ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #183059;
-  
+  align-items: center;
   
 }
 
@@ -339,6 +339,8 @@ footer{
 .home-grid-sign-up {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  
+
 }
 
 .sign-up-image-left {
@@ -353,4 +355,17 @@ footer{
 .sign-up-image-right {
   grid-column: 3/4;
   margin-bottom: 10px;
+}
+
+.sign-up-banner {
+  grid-column: 2/3;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.sign-up-instructions {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center; 
+  
 }
