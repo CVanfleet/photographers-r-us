@@ -399,15 +399,28 @@ footer {
 .home-grid-find {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 .first-profile {
+  margin: 20px 15px auto;
   grid-row: 1/2;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-border: 1px solid #d9d9d9;
+  grid-gap: 10px;
+  border: 1px solid #d9d9d9;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 5px black;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width: 80%;
+  align-self: center;
+  margin: auto;
+}
+
+.profile-info {
+  font-size: 12px;
+}
