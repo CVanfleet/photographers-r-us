@@ -364,11 +364,18 @@ footer {
 
 .banner-find {
   display: grid;
-  border-bottom: border-bottom: 4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
+
 
 #search {
   background-color: #183059;
-  border
+  padding: 30px;
+  border: none;
+}
+
+#search input {
+  margin: 1px auto;
 }
