@@ -290,7 +290,12 @@ ul {
   text-align: center;
 }
 
-.find-photogrpher-picture, .
+.find-photographer-picture, .sign-up-picture {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px black;
+}
 
 .find-button,
 .sign-up-button {
@@ -390,3 +395,19 @@ footer {
   color: #d9d9d9;
   background-color: #183059;
 }
+
+.home-grid-find {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.first-profile {
+  grid-row: 1/2;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px black;
