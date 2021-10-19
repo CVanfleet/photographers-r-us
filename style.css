@@ -358,3 +358,17 @@ footer {
   grid-column: 2/4;
   text-align: center;
 }
+
+
+/* find subpage */
+
+.banner-find {
+  display: grid;
+  border-bottom: border-bottom: 4px solid #d9d9d9;
+  grid-template-columns: 1fr 1fr;
+}
+
+#search {
+  background-color: #183059;
+  border
+}
