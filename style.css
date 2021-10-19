@@ -377,6 +377,11 @@ footer {
   border-bottom: 4px solid #d9d9d9;
   grid-template-columns: 1fr 1fr;
   height: 100px;
+
+}
+
+.search-heading {
+  margin-left: 10px;
 }
 
 #search {
