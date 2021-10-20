@@ -338,6 +338,10 @@ footer {
 
 /*Sign-up subpage */
 
+.sign-up-banner {
+  margin-left: 10px;
+}
+
 .home-grid-sign-up {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
